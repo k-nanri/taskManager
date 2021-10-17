@@ -18,7 +18,7 @@ DB名 : taskmng
 | カラム | 型 | 説明 |
 | ----- | -- | --- |
 | taskid | serial | タスクID |
-| title | text | タスクのタイトル |
+| title | varchar(200) | タスクのタイトル |
 | created_at | timestamp | タスクの作成時間 |
 | updated_at | timestamp | タスクの更新時間 |
 
