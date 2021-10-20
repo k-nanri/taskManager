@@ -1,9 +1,5 @@
 package jp.task.management.control;
 
-import java.util.Map;
-
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -40,7 +36,7 @@ public class TaskController {
         TaskCreatedDto dto = this.taskService.createTask(task);
         
         TaskCreatedResponse taskCreatedResponse = ResponseCreater.createdTaskResponse(dto);
-        
+        log.info("End create task request.");
         return ResponseEntity.ok(taskCreatedResponse);
     }
     

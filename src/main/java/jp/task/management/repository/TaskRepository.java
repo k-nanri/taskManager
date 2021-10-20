@@ -1,9 +1,9 @@
 package jp.task.management.repository;
 
-import jp.task.management.service.dto.TaskListDto;
+import jp.task.management.repository.dto.TaskListEntity;
 
 public interface TaskRepository {
 
-    TaskListDto fetchTask();
+    TaskListEntity fetchTask();
 
 }

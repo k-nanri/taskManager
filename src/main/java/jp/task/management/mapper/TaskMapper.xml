@@ -2,10 +2,10 @@
 <!DOCTYPE mapper
   PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
   "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
-<mapper namespace="mng.doc.mapper.DocumentMapper">
+<mapper namespace="jp.task.management.mapper.TaskMapper">
 
-  <resultMap id="baseMap" type="mng.doc.dao.Document">
-    <id property="id" jdbcType="INTEGER" column="taskid" />
+  <resultMap id="baseMap" type="jp.task.management.repository.dto.TaskListEntity">
+    <id property="taskId" jdbcType="INTEGER" column="taskid" />
     <result property="title" jdbcType="VARCHAR" column="title" />
     <result property="createdAt" jdbcType="TIMESTAMP" column="created_at" />
     <result property="updatedAt" jdbcType="TIMESTAMP" column="updated_at" />

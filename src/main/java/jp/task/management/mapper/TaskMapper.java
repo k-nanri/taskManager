@@ -2,11 +2,11 @@ package jp.task.management.mapper;
 
 import org.apache.ibatis.annotations.Mapper;
 
-import jp.task.management.service.dto.TaskListDto;
+import jp.task.management.repository.dto.TaskListEntity;
 
 @Mapper
 public interface TaskMapper {
     
-    public TaskListDto fetchTask();
+    public TaskListEntity fetchTask();
 
 }
